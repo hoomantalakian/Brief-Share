@@ -10,12 +10,13 @@ generator client {
 //-----------------------
 
 model User {
-  id        String   @id @default(uuid())
+  id        String   @id @default(uuid()) // field => name / type / attribute (optional)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   email     String?  @unique
   image     String?
   role      Role     @default(USER)
+  bookmarks Link[]
 }
 
 enum Role {
@@ -32,4 +33,5 @@ model Link {
   url         String
   imageUrl    String
   category    String
+  users       User[]
 }
