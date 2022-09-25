@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { links } from '../data/links';
 
+
 export default function Home() {
   return (
     <div>
@@ -13,7 +14,7 @@ export default function Home() {
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {links.map((link) => (
             <li key={link.id} className="shadow  max-w-md  rounded">
-              <img className="shadow-sm" src={link.imageUrl} />
+              {/* <img className="shadow-sm" src={link.imageUrl} /> */}
               <div className="p-5 flex flex-col space-y-2">
                 <p className="text-sm text-blue-500">{link.category}</p>
                 <p className="text-lg font-medium">{link.title}</p>
