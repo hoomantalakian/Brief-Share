@@ -10,7 +10,7 @@ export const AwesomeLink = ({
   id,
 } : any ) => {
   return (
-    <div key={id} className="shadow  max-w-md  rounded">
+    <div key={id}>
       <Image src={imageUrl} alt={imageUrl} />
       <div >
         <p >{category}</p>
@@ -20,7 +20,6 @@ export const AwesomeLink = ({
           {/* removes https from url */}
           {url.replace(/(^\w+:|^)\/\//, '')}
           {/* <svg
-            className="w-6 h-6"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"

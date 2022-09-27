@@ -10,11 +10,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="container mx-auto max-w-5xl my-20">
-        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div >
+        <ul >
           {links.map((link) => (
-            <li key={link.id} className="shadow  max-w-md  rounded">
-              {/* <img className="shadow-sm" src={link.imageUrl} /> */}
+            <li key={link.id} >
+              {/* <img  src={link.imageUrl} /> */}
               <div>
                 <p >{link.category}</p>
                 <p>{link.title}</p>
@@ -22,7 +22,6 @@ export default function Home() {
                 <a href={link.url} >
                   {link.url.replace(/(^\w+:|^)\/\//, '')}
                   {/* <svg
-                    className="w-4 h-4 my-1"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
