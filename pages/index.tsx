@@ -10,14 +10,11 @@ export default function Home() {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<div className="card-container">
-				<ul>
+			<div>
+				<ul className="card-container">
 					{links.map((link) => (
 						<li key={link.id} className="card-item">
-							<img
-								src={link.imageUrl}
-								alt={link.imageUrl}
-							/>
+							<img src={link.imageUrl} alt={link.imageUrl} />
 							{/* <Image
 								src={link.imageUrl}
 								alt="Landscape picture"

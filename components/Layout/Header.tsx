@@ -8,7 +8,6 @@ const Header = () => {
         <Link href="/">
           <a >
             <svg
-            style={{width: "50px"}}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
