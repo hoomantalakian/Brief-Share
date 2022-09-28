@@ -3,7 +3,7 @@ export const links = [
 		category: "Open Source",
 		description: "Fullstack React framework",
 		id: "8a9020b2-363b-4a4f-ad26-d6d55b51bqes",
-		imageUrl: "https://nextjs.org/static/twitter-cards/home.jpg",
+		imageUrl: "https://miro.medium.com/max/1000/1*htbUdWgFQ3a94PMEvBr_hQ.png",
 		title: "Next.js",
 		url: "https://nextjs.org",
 	},
@@ -20,7 +20,7 @@ export const links = [
 		description: "Utility-fist css framework",
 		id: "6a9122b2-363b-4a4f-ad26-d6c55b51baed",
 		imageUrl:
-			"https://tailwindcss.com/_next/static/media/twitter-large-card.85c0ff9e455da585949ff0aa50981857.jpg",
+			"https://tailwindcss.com/_next/static/media/tailwindui-small@75.8bb955b2.jpg",
 		title: "TailwindCSS",
 		url: "https://tailwindcss.com",
 	},
