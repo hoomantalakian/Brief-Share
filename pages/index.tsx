@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<div>
 			<Head>
-				<title>Brief</title>
+				<title>Brief Share</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
