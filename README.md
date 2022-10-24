@@ -10,5 +10,6 @@ this is a Fullstack App With TypeScript, PostgreSQL, Next.js, Prisma & GraphQL.
 - PostgreSQL
 - Prisma
 - GraphQL
+- Apollo Server
 - JWT
 & ...
