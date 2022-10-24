@@ -2,6 +2,30 @@
 ### Do not make changes to this file directly
 
 
+type Link {
+  category: String
+  description: String
+  id: String
+  imageUrl: String
+  title: String
+  url: String
+  users: [User]
+}
+
 type Query {
   ok: Boolean!
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+type User {
+  bookmarks: [Link]
+  email: String
+  id: String
+  image: String
+  name: String
+  role: Role
 }
