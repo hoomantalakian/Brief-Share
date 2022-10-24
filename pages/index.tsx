@@ -1,8 +1,29 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
-import { links } from "../data/links";
+import { gql, useQuery } from "@apollo/client";
+
+const AllLinksQuery = gql`
+	query {
+		links {
+			id
+			title
+			url
+			description
+			imageUrl
+			category
+		}
+	}
+`;
 
 export default function Home() {
+	const { data, error, loading } = useQuery(AllLinksQuery);
+
+	if (loading) {
+		return <p>Loading ...</p>;
+	}
+	if (error) {
+		return <p>Somthing went wrong, {error.message}</p>;
+	}
 	return (
 		<div>
 			<Head>
@@ -12,7 +33,7 @@ export default function Home() {
 
 			<div>
 				<ul className="card-container">
-					{links.map((link) => (
+					{data?.links.map((link) => (
 						<li key={link.id} className="card-item">
 							<img src={link.imageUrl} alt={link.imageUrl} />
 							{/* <Image
